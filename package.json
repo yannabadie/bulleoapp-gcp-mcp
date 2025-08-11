@@ -1,0 +1,38 @@
+{
+  "name": "bulleoapp-gcp-mcp-config",
+  "version": "1.0.0",
+  "description": "MCP Configuration for BulleoApp - Firebase & Google Cloud Platform Integration",
+  "main": "scripts/test-connection.js",
+  "scripts": {
+    "setup": "bash scripts/setup.sh",
+    "test": "node scripts/test-connection.js",
+    "install-clients": "bash scripts/install-mcp-clients.sh",
+    "config:generate": "bash scripts/setup.sh",
+    "config:test": "node scripts/test-connection.js"
+  },
+  "keywords": [
+    "mcp",
+    "firebase",
+    "gcp",
+    "bulleoapp",
+    "model-context-protocol",
+    "healthcare",
+    "pregnancy-tracker",
+    "pma"
+  ],
+  "author": "BulleoApp Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yannabadie/bulleoapp-gcp-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yannabadie/bulleoapp-gcp-mcp/issues"
+  },
+  "homepage": "https://github.com/yannabadie/bulleoapp-gcp-mcp#readme",
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
