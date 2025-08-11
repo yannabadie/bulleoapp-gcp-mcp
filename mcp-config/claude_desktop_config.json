@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "firebase-bulleoapp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "firebase-tools@latest",
+        "experimental:mcp",
+        "--dir", "/Users/VOTRE_USER/projects/bulleoapp",
+        "--only", "firestore,auth,storage,functions,hosting"
+      ]
+    },
+    "gcp-vertex-ai": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-gcp",
+        "vertex-ai"
+      ],
+      "env": {
+        "GOOGLE_APPLICATION_CREDENTIALS": "/path/to/your/service-account-key.json",
+        "GCP_PROJECT_ID": "bulleoapp-prod",
+        "GCP_REGION": "europe-west1"
+      }
+    }
+  }
+}
